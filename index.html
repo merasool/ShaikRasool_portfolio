@@ -3,95 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShaikRasool Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Shaik Rasool | Digital Designer & Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Example for icons, you can use any library -->
 </head>
 <body>
+    <!-- Dynamic Particle Background -->
+    <div id="particles-js"></div>
+
     <header>
-        <div class="container">
-            <h1>Shaik Rasool</h1>
-            <div class="image">
-            <img src="https://res.cloudinary.com/dd20dakdu/image/upload/v1715845852/download_kftkvo.jpg" alt="shaik-rasool" height="100" width="100">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <a href="#">SR</a>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#about"><span>01.</span> About</a></li>
+                <li><a href="#skills"><span>02.</span> Skills</a></li>
+                <li><a href="#projects"><span>03.</span> Projects</a></li>
+                <li><a href="#contact"><span>04.</span> Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm an aspiring web developer with a solid background in HTML and CSS. As a
- dedicated student, I love exploring all kinds of technology, especially where web development
- connects. I’ve also created Snapchat lenses using Lens Studio and enjoy learning new
- skills. I'm flexible and can quickly pick up and use new tools, always excited to tackle new
- challenges in the digital world.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="skills-section">
-        <div class="eff">
-            <h2>Skills</h2>
-        </div>
-        <div class="effect">
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>c programming(basic)</li>
-                <li>UI/UX</li>
-                <li>Java</li>
-                <li>Sql</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>WEATHER AIR QUALITY CHECKER</h3>
-                <p> Created a web app integrating weather and air quality APIs.
- Designed a clean UI for displaying real-time data with charts.</p>
-                <a href=" https://merasool.github.io/weather.com/" class="btn">View Project</a>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <p class="intro">Hi, my name is</p>
+                <h1 class="name">Shaik Rasool.</h1>
+                <h2 class="tagline">I build things for the web.</h2>
+                <p class="description">I'm a passionate digital designer and developer focused on creating unique, user-centric experiences. I transform ideas into modern, interactive web applications.</p>
+                <a href="#projects" class="btn">Check out my work!</a>
             </div>
-            <div class="project">
-                <h3> DIGITAL PORTFOLIO OF SHAIK RASOOL</h3>
-                <p> Designed and built a personal portfolio using HTML, CSS, JavaScript.
- Showcased key projects and skills with mobile-first design principles.</p>
-                <a href="https://merasool.github.io/ShaikRasool_portfolio/" class="btn">View Project</a>
+        </section>
+
+        <section id="about" class="fade-in">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm Shaik Rasool, a creative professional with a passion for design and technology. My journey started with a fascination for how beautiful interfaces are built, which led me to dive deep into UI/UX principles and front-end development.</p>
+                    <p>I thrive on turning complex problems into simple, elegant, and intuitive designs. Whether I'm crafting a pixel-perfect layout or writing clean, efficient code, my goal is always to create digital experiences that are not only visually appealing but also highly functional.</p>
+                    <p>I'm currently honing my skills in modern web technologies and always on the lookout for new challenges and opportunities to grow as a designer and developer.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://res.cloudinary.com/dd20dakdu/image/upload/v1715845852/download_kftkvo.jpg" alt="Shaik Rasool">
+                </div>
             </div>
-            <div class="project">
-                <h3>  Moviezz</h3>
-                <p> Developed a movie trailer website with a custom UI using React.js and TMDB API.
- Enabled real-time movie data display and trailer streaming.
- Implemented category filters and search functionality with responsive design</p>
-                <a href="https://moviezz-ui.vercel.app/" class="btn">View Project</a>
+        </section>
+
+
+        <section id="skills" class="fade-in">
+            <h2 class="section-title">My Skillset</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-object-group"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and visually appealing user interfaces.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>HTML & CSS</h3>
+                    <p>Structuring and styling responsive web pages.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <h3>JavaScript</h3>
+                    <p>Building interactive and dynamic web functionalities.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <h3>React.js</h3>
+                    <p>Developing single-page applications with a modern framework.</p>
+                </div>
+                 <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>SQL</h3>
+                    <p>Managing and querying relational databases.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-cuttlefish"></i></div>
+                    <h3>C Programming</h3>
+                    <p>Understanding fundamental programming logic and concepts.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
-            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">
-                <img src="https://res.cloudinary.com/dd20dakdu/image/upload/v1723321629/360_F_497386968_dqjeA07m8bhT9156WbUseVqrqhOBjgYB_prgm9i.jpg" alt="mail" height="40" width="40">
-            </a>
+        <section id="projects" class="fade-in">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-card">
+                <div class="project-image">
+                    <a href="https://moviezz-ui.vercel.app/" target="_blank"><img src="https://via.placeholder.com/600x350" alt="Moviezz Project"></a>
+                </div>
+                <div class="project-content">
+                    <p class="project-overline">Featured Project</p>
+                    <h3 class="project-title"><a href="https://moviezz-ui.vercel.app/" target="_blank">Moviezz</a></h3>
+                    <div class="project-description">
+                        <p>A movie trailer platform built with React.js and the TMDB API. It features a custom UI, real-time data fetching, trailer streaming, and advanced search/filter functionality.</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>React.js</li>
+                        <li>TMDB API</li>
+                        <li>CSS</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://moviezz-ui.vercel.app/" target="_blank" class="btn">View Live</a>
+                    </div>
+                </div>
+            </div>
 
-            <a href="https://www.linkedin.com/in/shaik-rasool/" target="_blank">
-                <img src="https://res.cloudinary.com/dd20dakdu/image/upload/v1723832770/linkiedin_ryrgob.png" alt="LinkedIn" height="40" width="40">
-            </a>
-            <a href="https://github.com/merasool" target="_blank">
-                <img src="https://res.cloudinary.com/dd20dakdu/image/upload/v1723832989/github_1_evvqnp.png" alt="GitHub" height="40" width="40">
-            </a>
+            <div class="project-card reversed">
+                 <div class="project-image">
+                    <a href="https://merasool.github.io/weather.com/" target="_blank"><img src="https://via.placeholder.com/600x350" alt="Weather App"></a>
+                </div>
+                <div class="project-content">
+                    <p class="project-overline">Featured Project</p>
+                    <h3 class="project-title"><a href="https://merasool.github.io/weather.com/" target="_blank">Weather Air Quality Checker</a></h3>
+                    <div class="project-description">
+                        <p>A web app integrating multiple APIs to provide real-time weather and air quality data. The interface is designed for clarity, with data visualizations and charts.</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Weather API</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://merasool.github.io/weather.com/" target="_blank" class="btn">View Live</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </div>
-    </section>
+        <section id="contact" class="fade-in">
+            <h2 class="contact-title">Get In Touch</h2>
+            <p>I'm always open to discussing new projects and design challenges. Feel free to reach out!</p>
+            <a href="mailto:your-email@example.com" class="btn">Say Hello</a>
+             <div class="social-links">
+                <a href="https://github.com/merasool" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shaik-rasool/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed & Built by Shaik Rasool</p>
+    </footer>
+
+    <!-- JS for particles and animations -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
